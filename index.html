@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=854 height=480></canvas>
+      <canvas id="unity-canvas" width=800 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Builds2.loader.js";
+      var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Builds2.data.gz",
-        frameworkUrl: buildUrl + "/Builds2.framework.js.gz",
-        codeUrl: buildUrl + "/Builds2.wasm.gz",
+        dataUrl: buildUrl + "/Builds.data.gz",
+        frameworkUrl: buildUrl + "/Builds.framework.js.gz",
+        codeUrl: buildUrl + "/Builds.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "E-Learning identify the difference",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "854px";
-        canvas.style.height = "480px";
+        canvas.style.width = "800px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
